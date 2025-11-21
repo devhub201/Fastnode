@@ -14,8 +14,8 @@ from datetime import datetime, timedelta
 TOKEN = ""
 GUILD_ID = 1432390408184529084
 MAIN_ADMIN_IDS = {1397506807089598474}  # CHANGED: Renamed to MAIN_ADMIN_IDS
-SERVER_IP = "138.68.79.95"
-QR_IMAGE = "https://raw.githubusercontent.com/deadlauncherg/PUFFER-PANEL-IN-FIREBASE/main/qr.jpg"
+SERVER_IP = "207.244.240.48"
+QR_IMAGE = ""
 IMAGE = "jrei/systemd-ubuntu:22.04"
 DEFAULT_RAM_GB = 32
 DEFAULT_CPU = 6
@@ -25,9 +25,9 @@ USERS_FILE = os.path.join(DATA_DIR, "users.json")
 VPS_FILE = os.path.join(DATA_DIR, "vps_db.json")
 INV_CACHE_FILE = os.path.join(DATA_DIR, "inv_cache.json")
 GIVEAWAY_FILE = os.path.join(DATA_DIR, "giveaways.json")
-POINTS_PER_DEPLOY = 4
-POINTS_RENEW_15 = 3
-POINTS_RENEW_30 = 5
+POINTS_PER_DEPLOY = 6
+POINTS_RENEW_15 = 4
+POINTS_RENEW_30 = 8
 VPS_LIFETIME_DAYS = 15
 RENEW_MODE_FILE = os.path.join(DATA_DIR, "renew_mode.json")
 LOG_CHANNEL_ID = None
@@ -1903,20 +1903,20 @@ async def plan(interaction: discord.Interaction):
     embed = discord.Embed(title="💰 VPS Plans", color=discord.Color.green())
     
     embed.add_field(
-        name="🎯 Basic Plan - ₹49",
-        value="• 32GB RAM\n• 6 CPU Cores\n• 100GB Disk\n• 15 Days Validity\n• Full Root Access\n• Systemctl Support\n• Pterodactyl Ready",
+        name="🎯 Basic Plan - ₹99",
+        value="• 16GB RAM\n• 6 CPU Cores\n• 100GB Disk\n• 15 Days Validity\n• Full Root Access\n• Systemctl Support\n• Pterodactyl Ready",
         inline=False
     )
     
     embed.add_field(
-        name="💎 Premium Plan - ₹99", 
-        value="• 64GB RAM\n• 12 CPU Cores\n• 200GB Disk\n• 30 Days Validity\n• Priority Support\n• All Basic Features",
+        name="💎 Premium Plan - ₹190", 
+        value="• 32GB RAM\n• 12 CPU Cores\n• 200GB Disk\n• 30 Days Validity\n• Priority Support\n• All Basic Features",
         inline=False
     )
     
     embed.add_field(
-        name="🚀 Ultimate Plan - ₹199",
-        value="• 128GB RAM\n• 24 CPU Cores\n• 500GB Disk\n• 60 Days Validity\n• Dedicated Resources\n• All Premium Features",
+        name="🚀 Ultimate Plan - ₹290",
+        value="• 64GB RAM\n• 24 CPU Cores\n• 500GB Disk\n• 60 Days Validity\n• Dedicated Resources\n• All Premium Features",
         inline=False
     )
     

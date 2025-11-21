@@ -2,6 +2,14 @@
 **Must have subscribed to AyuXD**
 **1st** 
 ```
+apt update 
+```
+**2st** 
+```
+TKMC 
+```
+**1st** 
+```
 pip install -r requirements.txt
 ```
 **2nd** 

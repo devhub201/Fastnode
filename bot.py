@@ -11,9 +11,9 @@ import logging
 from datetime import datetime, timedelta
 
 # ---------------- CONFIG ----------------
-TOKEN = ""
-GUILD_ID = 1432390408184529084
-MAIN_ADMIN_IDS = {1397506807089598474}  # CHANGED: Renamed to MAIN_ADMIN_IDS
+TOKEN = "MTQ3MzYxMDEwODg1OTcxNTYyNg.GPGiZj.kTJTZxcIlnCOb_PDmc-pUa1ADuHAU5HMQo_BOk"
+GUILD_ID = 1459937321506967799
+MAIN_ADMIN_IDS = {200765006665482291}  # CHANGED: Renamed to MAIN_ADMIN_IDS
 SERVER_IP = "207.244.240.48"
 QR_IMAGE = ""
 IMAGE = "jrei/systemd-ubuntu:22.04"
@@ -28,17 +28,17 @@ GIVEAWAY_FILE = os.path.join(DATA_DIR, "giveaways.json")
 POINTS_PER_DEPLOY = 6
 POINTS_RENEW_15 = 4
 POINTS_RENEW_30 = 8
-VPS_LIFETIME_DAYS = 15
+VPS_LIFETIME_DAYS = 30
 RENEW_MODE_FILE = os.path.join(DATA_DIR, "renew_mode.json")
-LOG_CHANNEL_ID = None
-OWNER_ID = 1397506807089598474
+LOG_CHANNEL_ID = 1473610806196179004
+OWNER_ID = 1200765006665482291
 
 # Global admin sets
 ADMIN_IDS = set(MAIN_ADMIN_IDS)  # This will contain ALL admins (main + additional)
 
 # Logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("ChunkHostBot")
+logger = logging.getLogger("FastNode Bot")
 
 # Ensure data dir
 os.makedirs(DATA_DIR, exist_ok=True)
